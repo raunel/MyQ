@@ -4,15 +4,15 @@ import json
 import time
 import myq
 
-USERNAME = "<MYQ_LOGIN_USERNAME>"
-PASSWORD = "<MYQ_LOGIN_PASSWORD>"
+USERNAME = "raunel24@att.net"
+PASSWORD = "Jayden525!"
 mq = myq.MyQ(USERNAME,PASSWORD)
 
 def lambda_handler(event, context):
 
-    if event['session']['application']['applicationId'] != "amzn1.ask.skill.<your-alexa-skills-id>":
+    if event['session']['application']['applicationId'] != "amzn1.ask.skill.988acfb6-e476-4183-a12d-074043b1e873":
         print "Invalid Application ID"
-        raise
+	    raise
     else:
         # Not using sessions for now
         sessionAttributes = {}
